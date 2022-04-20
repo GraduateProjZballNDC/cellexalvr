@@ -171,7 +171,7 @@ Shader "Custom/CombinedGraphpoint"
                 fixed4 frag(vertex_output i) : COLOR
                 {
                     i.lightDir = normalize(i.lightDir);
-                    fixed atten = LIGHT_ATTENUATION(i); // Macro to get you the combined shadow & attenuation value.
+                    //fixed atten = LIGHT_ATTENUATION(i); // Macro to get you the combined shadow & attenuation value.
 
                     // float3 expressionColorData = (tex2D(_MainTex, i.uv));
                     float3 expressionColorData = tex2D(_MainTex, i.uv);
